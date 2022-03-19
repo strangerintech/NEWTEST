@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #070707;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#header {
+     height: 75px;
+}
+
+#header .container {
+    border-bottom: 1px solid #828282;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+
+}
+
+
+/*Почему padding 30px 0; применяется только к самому блоку UL при этом к каждой <li> не применяется, они же вложенные и должны наследовать стили UL ? */
+#main-menu ul {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#main-menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+#main-menu ul li a {
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+    text-decoration: none;   
+}
+
+a {
+    font-size: 18px;
+    line-height: 25px;
+    color: #070707;
+}
+
+
+#main-menu ul li a.active,
+#main-menu ul li a:hover {
+    color: #070707;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.gray {
+    background-color: #f6f6f6;
+}
+
+.first-screen {
+    padding: 33px 0 100px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+h1 {
+    font-size: 47px;
+    line-height: 64px;
+    margin-bottom: 38px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 28px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 38px;
+    margin-bottom: 28px;
+}
+
+
+
+.content p {
+    margin-bottom: 40px;
+}
+
+/* Лютый костыль, но не мог вспомнить что лучше, про чайлды еще не очень знаю */
+.content .last {
+    margin-bottom: 0;
+}
+
+
+.content {
+    width: 480px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills {
+    margin: 0 auto; /* почему это не работает? а в предыдущем .content работает?
+    здесь работает  только если жестко задать ширину, а почему? Ведь <p> блочный
+    и находется в блоке див, а значит должен внутри него двигаться ? */
+    text-align: center;
+    
+}
+.skills p {
+    margin-bottom: 78px;
+}
+
+/* .icons {
+    width: 167px;
+    height: 224px;
+    margin-right: 65px;
+    
+} 
+Почему так не работает наследование, чтобы к картинком применялось все, что описано
+для класса icons?
+*/
+
+
+/* Так уже работает, но не понял, как значки раскидать правильно,
+вроде бы по макету расстояние между иконками 90 пикселей, у меня больше 
+65 не получается, перекидывает на следующий ряд, у меня блок
+icons в блоке контейнер, т.е. должен от него наследовать ширину правильно? */
+
+.icons img {
+    width: 167px;
+    height: 224px;
+    margin-right: 64px;
+}
+
+
+.fourth-screen-gray h2 {
+    margin-bottom: 8px;
+}
+
+.fourth-screen-gray p {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.promo {
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 136px;
+}
+
+.promo p {
+    margin-top: 8px;
+}
+
+.portable {
+    padding-top: 0;
+}
+
+.portable p {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.contacts {
+    padding-top: 87px;
+}
+.foo {
+    width: 340px;
+    height: 411px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.foo h2 {
+    margin-bottom: 21px;
+    font-size: 42px;
+}
+
+.btn {
+    margin-top: 78px;
+    width: 180px;
+    height: 42px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #000;
+    border-radius: 42px;
+    margin-bottom: 17px;
+    border: solid;
+
+}
+
+/* Не нашел в фигме ифнормации насчет шрифта в кнопке */
+.btn h3 {
+    color: #fff;
+}
+.links {
+    margin-top: 41px;
+    color: #828282;
+ 
+}
